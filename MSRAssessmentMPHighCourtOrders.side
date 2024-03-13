@@ -1,0 +1,65 @@
+{
+  "id": "99138922-6ad6-4418-9304-f4d812880d9b",
+  "version": "2.0",
+  "name": "MSRAssessmentMPHighCourtOrders",
+  "url": "https://mphc.gov.in/",
+  "tests": [{
+    "id": "3ba60878-5ec9-451c-bc55-fe50f213df52",
+    "name": "MPHighCourtOrdersV2",
+    "commands": [{
+      "id": "787f8f72-7c96-4b9c-9772-b95cf5b99819",
+      "comment": "",
+      "command": "open",
+      "target": "https://mphc.gov.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "951b250f-e44b-434d-8837-38c9bbdf3b84",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f902b3e-524b-4a63-b75c-e0aed8165a3d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Circulars / Orders",
+      "targets": [
+        ["linkText=Circulars / Orders", "linkText"],
+        ["css=#block-system-navigation .leaf:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Circulars / Orders')]", "xpath:link"],
+        ["xpath=//div[@id='block-system-navigation']/div/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/circulars-orders')]", "xpath:href"],
+        ["xpath=//aside/div/div/div/ul/li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Circulars / Orders')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf6b15b9-5032-4b8c-ab74-067de94a138e",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul:nth-child(1) > li:nth-child(1) > div > a",
+      "targets": [
+        ["css=ul:nth-child(1) > li:nth-child(1) > div > a", "css:finder"],
+        ["xpath=//div[@id='mphc_post']/ul/li/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mphc.gov.in/PDF/web_pdf/CI/04-05 Office Order Digitization Duty.pdf')]", "xpath:href"],
+        ["xpath=//li/div/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4294",
+      "windowTimeout": 2000
+    }]
+  }],
+  "suites": [{
+    "id": "5a893ec5-e9b9-4502-8d4e-1efc0453c572",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://mphc.gov.in/"],
+  "plugins": []
+}
